@@ -1,8 +1,7 @@
 from selenium import webdriver
 
-
 driver = webdriver.Chrome()
-driver.get("https://www.google.co.uk");
+driver.get("https://www.google.com.ua/");
 
 file = open(r"C:\captures.html", "w")
 file.write("<!DOCTYPE html><html><head></head><body width=\"600px\">")
