@@ -1,7 +1,8 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
-driver.get("https://www.google.com.ua/");
+driver = webdriver.Chrome('C:\\chromedriver.exe')
+driver.maximize_window()
+driver.get("https://ua.sinoptik.ua/погода-київ/10-днів");
 
 file = open(r"C:\captures.html", "w")
 file.write("<!DOCTYPE html><html><head></head><body width=\"600px\">")
